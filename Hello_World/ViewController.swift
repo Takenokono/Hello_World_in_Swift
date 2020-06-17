@@ -9,12 +9,16 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var TextLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func tapButton(_ sender: Any) {
+        TextLabel.text = "Hello World"
+    }
+    
 }
 
